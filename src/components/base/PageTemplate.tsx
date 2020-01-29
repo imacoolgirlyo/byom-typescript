@@ -1,17 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
-import PageTemplateHeader from './PageTemplateHeader';
+import Header from './Header';
+import NavigationIcons from './NavigationIcons';
 
 interface Props {}
 
-const PageTemplateBlock = styled.div``;
+const PageTemplateBlock = styled.div`
+  margin: auto;
+  width: 80%;
+  background-color: white;
+  min-width: 360px;
+`;
+const ContentBlock = styled.div``;
 
 const PageTemplate: React.FC<Props> = ({ children }) => {
   return (
-    <PageTemplateBlock>
-      <PageTemplateHeader title="byom.exe" />
-      {children}
-    </PageTemplateBlock>
+    <>
+      <NavigationIcons />
+      <PageTemplateBlock>
+        <Header />
+        <ContentBlock>{children}</ContentBlock>
+      </PageTemplateBlock>
+    </>
   );
 };
 
