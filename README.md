@@ -1,4 +1,5 @@
 - 모든 코드에 의미가 있을 것. 
+- [ ] commit Message 신경쓰기
 - [ ] test code 작성
 - [ ] typescript 사용
-- [ ] svg animation 
+- [ ] svg animation 추가 (mobile, tablet)
